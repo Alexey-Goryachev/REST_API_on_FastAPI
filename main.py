@@ -13,12 +13,12 @@ app.include_router(contacts.router, prefix='/api')
 
 #default route for the application
 @app.get("/")
-def read_root():
+async def read_root():
     return {"message": "Welcome to FastApi"}
 
 
 @app.get("/api/healthchecker/")
-def healthchecker(db: Session = Depends(get_db)):
+async def healthchecker(db: Session = Depends(get_db)):
     try:
         result = db.execute(text("SELECT 1")).fetchone()
         if result is None:
