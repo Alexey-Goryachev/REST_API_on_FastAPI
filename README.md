@@ -9,4 +9,6 @@ The API has the standard functionality of GRUD operations as well as additional 
 - search for contacts by first name, last name or email.
 - receive a list of contacts with birthdays for the next 7 days
 
-To view, run the main file main.py and open localhost(http://127.0.0.7:8000/docs) in the browser
+To view, install the necessary packages, run the main file main.py and open localhost(http://127.0.0.7:8000/docs) in your browser.
+
+In order to use the contacts functionality, you must first pass authorization (login -test1@example.com, password - 123456) or register a new user and log in through him.
